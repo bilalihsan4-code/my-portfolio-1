@@ -4,28 +4,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bilal Ihsan | WordPress, E-commerce &amp; Creative Content</title>
-<meta name="description" content="Bilal Ihsan — Digital Marketing &amp; AI Content Specialist with experience in digital marketing, AI content creation, e-commerce, social media, business management and market analysis.">
-<meta name="theme-color" content="#090c11">
+<meta name="description" content="Bilal Ihsan is a WordPress designer and digital creative in Islamabad, building WooCommerce stores, product visuals and short-form content for brands.">
 <meta name="author" content="Bilal Ihsan">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#090c11">
+<meta name="color-scheme" content="dark">
+
+<!-- IMPORTANT: replace https://your-domain.com/ with the real domain before going live (5 places in the head) -->
+<link rel="canonical" href="https://your-domain.com/">
 
 <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bilal Ihsan | WordPress, E-commerce & Creative Content">
-<meta property="og:description" content="Explore website, e-commerce and creative content projects by Bilal Ihsan.">
-<meta property="og:image" content="profile.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Bilal Ihsan">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://your-domain.com/">
+<meta property="og:title" content="Bilal Ihsan | WordPress, E-commerce &amp; Creative Content">
+<meta property="og:description" content="WordPress and WooCommerce websites, product visuals and short-form content by Bilal Ihsan, based in Islamabad.">
+<meta property="og:image" content="https://your-domain.com/profile.jpg">
+<meta property="og:image:alt" content="Portrait of Bilal Ihsan">
+<meta property="profile:first_name" content="Bilal">
+<meta property="profile:last_name" content="Ihsan">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◆</text></svg>">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bilal Ihsan | WordPress, E-commerce &amp; Creative Content">
+<meta name="twitter:description" content="WordPress and WooCommerce websites, product visuals and short-form content by Bilal Ihsan.">
+<meta name="twitter:image" content="https://your-domain.com/profile.jpg">
+
+<!-- Structured data (Person + WebSite + ProfilePage) for Google and AI search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://your-domain.com/#person",
+      "name": "Bilal Ihsan",
+      "url": "https://your-domain.com/",
+      "image": "https://your-domain.com/profile.jpg",
+      "jobTitle": "WordPress Designer and Digital Creative",
+      "email": "mailto:bilalihsan4@gmail.com",
+      "telephone": "+92-314-9760070",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Islamabad",
+        "addressCountry": "PK"
+      },
+      "knowsAbout": [
+        "WordPress",
+        "WooCommerce",
+        "E-commerce content",
+        "Product imagery",
+        "Graphic design",
+        "Social media content",
+        "AI-assisted image and video creation",
+        "Forex and gold market analysis"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://your-domain.com/#website",
+      "url": "https://your-domain.com/",
+      "name": "Bilal Ihsan",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://your-domain.com/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://your-domain.com/#profile",
+      "url": "https://your-domain.com/",
+      "name": "Bilal Ihsan | WordPress, E-commerce & Creative Content",
+      "isPartOf": { "@id": "https://your-domain.com/#website" },
+      "mainEntity": { "@id": "https://your-domain.com/#person" }
+    }
+  ]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Flags that JS is running, so scroll-reveal content is never left invisible without it -->
+<script>document.documentElement.classList.add('js');</script>
+
 <style>
 /* =========================================================
    BILAL IHSAN — PORTFOLIO STYLESHEET
-   Design system: deep navy-charcoal base, gold accent (trading /
-   commercial credibility) + teal accent (digital / AI work).
-   Typefaces: Sora (display) + Inter (body).
+   Deep navy-charcoal base, gold accent (commercial) and teal
+   accent (digital work). Typefaces: Sora (display), Inter (body).
    ========================================================= */
 
 /* ---------- Design tokens ---------- */
@@ -39,7 +108,7 @@
 
   --text: #eef1f6;
   --text-dim: #9aa5b8;
-  --text-faint: #616d82;
+  --text-faint: #6f7b90;
 
   --gold: #c9a227;
   --gold-soft: #e6c65c;
@@ -48,9 +117,6 @@
   --teal: #2bb9ae;
   --teal-soft: #6be8db;
   --teal-dim: rgba(43,185,174,0.14);
-
-  --danger: #e2685f;
-  --success: #4bbf8c;
 
   --font-display: 'Sora', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
@@ -61,7 +127,6 @@
   --radius-l: 22px;
 
   --ease: cubic-bezier(.22,.68,.32,1);
-  --speed: .5s;
 
   --shadow-1: 0 10px 30px -12px rgba(0,0,0,.55);
   --shadow-2: 0 22px 55px -18px rgba(0,0,0,.65);
@@ -69,7 +134,7 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after{ box-sizing: border-box; }
-html{ scroll-behavior: smooth; scroll-padding-top: 84px; }
+html{ scroll-behavior: smooth; scroll-padding-top: 84px; overflow-x: hidden; }
 body{
   margin:0;
   background: var(--bg);
@@ -87,6 +152,17 @@ button{ font-family: inherit; cursor:pointer; }
 h1,h2,h3,h4{ font-family: var(--font-display); margin:0; line-height:1.15; letter-spacing:-0.01em; }
 p{ margin:0; }
 :focus-visible{ outline: 2px solid var(--teal-soft); outline-offset: 3px; border-radius: 4px; }
+section[tabindex="-1"]:focus{ outline: none; }
+
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+.skip-link{
+  position:absolute; left:16px; top:-60px; z-index:1000;
+  background: var(--gold); color:#16130a; font-weight:600;
+  padding:10px 16px; border-radius: var(--radius-s);
+  transition: top .2s var(--ease);
+}
+.skip-link:focus{ top:16px; }
 
 .container{
   width:100%;
@@ -96,7 +172,6 @@ p{ margin:0; }
 }
 
 section{ position:relative; padding: 128px 0; }
-section.tight{ padding: 96px 0; }
 
 .section-head{
   max-width: 640px;
@@ -127,7 +202,9 @@ section.tight{ padding: 96px 0; }
   max-width: 56ch;
 }
 .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head.center p{ margin-left:auto; margin-right:auto; }
 .section-head.center .kicker::before{ display:none; }
+.section-head.compact{ margin-bottom: 28px; }
 
 /* ---------- Buttons ---------- */
 .btn{
@@ -173,18 +250,18 @@ section.tight{ padding: 96px 0; }
 }
 .text-link:hover{ border-color: var(--teal-soft); gap:12px; }
 
-/* ---------- Reveal-on-scroll ---------- */
-.reveal{
+/* ---------- Reveal-on-scroll (only when JS is running) ---------- */
+.js .reveal{
   opacity: 0;
   transform: translateY(26px);
   transition: opacity .8s var(--ease), transform .8s var(--ease);
 }
-.reveal.in-view{ opacity:1; transform:none; }
-.reveal-stagger > *{
+.js .reveal.in-view{ opacity:1; transform:none; }
+.js .reveal-stagger > *{
   opacity:0; transform: translateY(24px);
   transition: opacity .7s var(--ease), transform .7s var(--ease);
 }
-.reveal-stagger.in-view > *{ opacity:1; transform:none; }
+.js .reveal-stagger.in-view > *{ opacity:1; transform:none; }
 .reveal-stagger.in-view > *:nth-child(1){ transition-delay: .05s; }
 .reveal-stagger.in-view > *:nth-child(2){ transition-delay: .14s; }
 .reveal-stagger.in-view > *:nth-child(3){ transition-delay: .23s; }
@@ -192,36 +269,13 @@ section.tight{ padding: 96px 0; }
 .reveal-stagger.in-view > *:nth-child(5){ transition-delay: .41s; }
 .reveal-stagger.in-view > *:nth-child(6){ transition-delay: .5s; }
 .reveal-stagger.in-view > *:nth-child(7){ transition-delay: .59s; }
+.reveal-stagger.in-view > *:nth-child(8){ transition-delay: .68s; }
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
-  .reveal, .reveal-stagger > *{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .js .reveal, .js .reveal-stagger > *{ opacity:1 !important; transform:none !important; transition:none !important; }
   *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
-
-/* =========================================================
-   PRELOADER
-   ========================================================= */
-#preloader{
-  position: fixed; inset:0; z-index: 999;
-  background: var(--bg);
-  display:flex; align-items:center; justify-content:center;
-  transition: opacity .5s var(--ease), visibility .5s var(--ease);
-}
-#preloader.hidden{ opacity:0; visibility:hidden; }
-.loader-mark{
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  letter-spacing: .08em;
-  color: var(--text-dim);
-  display:flex; align-items:center; gap:14px;
-}
-.loader-mark .dot{
-  width:9px; height:9px; border-radius:50%;
-  background: var(--gold);
-  animation: pulse 1s ease-in-out infinite;
-}
-@keyframes pulse{ 0%,100%{ transform:scale(1); opacity:1;} 50%{ transform:scale(1.5); opacity:.5; } }
 
 /* =========================================================
    NAVBAR
@@ -229,23 +283,28 @@ section.tight{ padding: 96px 0; }
 .navbar{
   position: fixed; top:0; left:0; right:0; z-index: 500;
   padding: 22px 0;
-  transition: padding .4s var(--ease), background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+  transition: padding .4s var(--ease), border-color .4s var(--ease);
   border-bottom: 1px solid transparent;
   opacity: 0;
   animation: nav-fade .6s .25s var(--ease) forwards;
 }
-/* Note: intentionally NOT using `transform` here (even transiently) — a
-   transform on this ancestor would make it the containing block for the
-   fixed-position mobile nav-links overlay below, breaking its full-screen
-   coverage. Opacity is used instead for the entrance so it stays a plain
-   containing block relative to the viewport. */
-@keyframes nav-fade{ to{ opacity: 1; } }
-.navbar.scrolled{
-  padding: 14px 0;
+/* The frosted background lives on a pseudo-element. Putting
+   backdrop-filter (or transform) on .navbar itself would make it the
+   containing block for the fixed mobile menu below and shrink that
+   overlay to the navbar's height once the page is scrolled. */
+.navbar::before{
+  content:"";
+  position:absolute; inset:0; z-index:-1;
   background: rgba(9,12,17,.78);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
-  border-color: var(--border-soft);
+  opacity:0;
+  transition: opacity .4s var(--ease);
+  pointer-events:none;
 }
+@keyframes nav-fade{ to{ opacity: 1; } }
+.navbar.scrolled{ padding: 14px 0; border-color: var(--border-soft); }
+.navbar.scrolled::before{ opacity:1; }
 .navbar .container{ display:flex; align-items:center; justify-content:space-between; gap: 24px; }
 .brand{ font-family: var(--font-display); font-weight:700; font-size: 1.15rem; letter-spacing: -.01em; }
 .brand span{ color: var(--gold-soft); }
@@ -266,7 +325,8 @@ section.tight{ padding: 96px 0; }
 
 .nav-cta{ display:flex; align-items:center; gap: 18px; }
 .nav-toggle{
-  display:none; flex-direction:column; gap:5px; background:none; border:none; padding: 6px; z-index: 60;
+  display:none; flex-direction:column; gap:5px; background:none; border:none; padding: 6px;
+  position:relative; z-index: 60;
 }
 .nav-toggle span{ width: 22px; height:2px; background: var(--text); transition: transform .35s var(--ease), opacity .35s var(--ease); }
 .nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
@@ -278,6 +338,7 @@ section.tight{ padding: 96px 0; }
    ========================================================= */
 .hero{
   min-height: 100vh;
+  min-height: 100svh;
   display:flex; align-items:center;
   padding-top: 140px; padding-bottom: 80px;
   position: relative;
@@ -392,10 +453,12 @@ section.tight{ padding: 96px 0; }
   border: 4px solid var(--bg);
   box-shadow: var(--shadow-2);
   position: relative; z-index:1;
+  background: var(--surface);
 }
 .badge{
   position:absolute;
   background: rgba(18,23,34,.85);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border:1px solid var(--border);
   padding: 9px 15px;
@@ -414,6 +477,8 @@ section.tight{ padding: 96px 0; }
 .badge-2 .dot{ background: var(--gold); }
 .badge-3{ bottom: -2%; left: 6%; animation-delay: 1.4s; }
 .badge-3 .dot{ background: var(--teal-soft); }
+.badge-4{ top: 2%; right: -5%; animation-delay: 2s; }
+.badge-4 .dot{ background: var(--gold-soft); }
 
 /* =========================================================
    ABOUT
@@ -527,7 +592,7 @@ section.tight{ padding: 96px 0; }
   border-radius: 999px;
   font-size: .87rem;
   font-weight:600;
-  transition: all .3s var(--ease);
+  transition: color .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
 }
 .filter-btn:hover{ color: var(--text); border-color: var(--teal); }
 .filter-btn.active{ background: var(--gold); border-color: var(--gold); color: #16130a; }
@@ -553,15 +618,16 @@ section.tight{ padding: 96px 0; }
   display:flex; align-items:center; justify-content:center;
   overflow:hidden;
 }
-.project-media span.pm-label{
+.project-media .pm-label{
+  position:relative; z-index:2;
   font-family: var(--font-display);
   font-size: 1.9rem;
   font-weight:700;
   letter-spacing: -0.01em;
   color: rgba(255,255,255,.92);
-  z-index:2;
   text-align:center;
   padding: 0 20px;
+  transition: transform .5s var(--ease);
 }
 .project-media::after{
   content:"";
@@ -571,20 +637,18 @@ section.tight{ padding: 96px 0; }
 .media-woodelle{ background: linear-gradient(135deg, #6b4a2c, #3a2717); }
 .media-falah{ background: linear-gradient(135deg, #123a44, #0c5c66); }
 .media-velora{ background: linear-gradient(135deg, #26210f, #4a3c12); }
-.project-card:hover .project-media{ }
-.project-card:hover .project-media span.pm-label{ transform: scale(1.05); }
-.project-media span.pm-label{ transition: transform .5s var(--ease); }
+.project-card:hover .project-media .pm-label{ transform: scale(1.05); }
 
 .project-body{ padding: 26px 26px 28px; display:flex; flex-direction:column; gap: 14px; flex:1; }
 .project-cat{ font-size:.78rem; font-weight:600; color: var(--teal-soft); text-transform:uppercase; letter-spacing:.05em; }
 .project-body h3{ font-size: 1.2rem; }
 .project-body p{ color: var(--text-dim); font-size:.92rem; }
+.project-body .text-link{ align-self:flex-start; margin-top:2px; }
 .project-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; padding-top:6px; }
 .project-tags span{
   font-size:.76rem; padding:5px 11px; border-radius:999px;
   background: var(--surface-2); color: var(--text-faint); border:1px solid var(--border);
 }
-.project-body .text-link{ margin-top: 8px; }
 
 /* =========================================================
    EXPERIENCE — vertical timeline
@@ -605,7 +669,7 @@ section.tight{ padding: 96px 0; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-m);
-  padding: 30px 30px;
+  padding: 30px;
 }
 .timeline-meta{ display:flex; flex-wrap:wrap; gap: 14px; align-items:center; margin-bottom: 12px; }
 .timeline-meta .period{
@@ -628,7 +692,7 @@ section.tight{ padding: 96px 0; }
 }
 
 /* =========================================================
-   MARKET ANALYSIS  (distinct dark panel, chart motif)
+   MARKET ANALYSIS
    ========================================================= */
 .market-section{
   background: var(--bg-soft);
@@ -749,18 +813,20 @@ section.tight{ padding: 96px 0; }
 }
 .edu-icon svg{ width:28px; height:28px; }
 .edu-card h3{ font-size: 1.2rem; margin-bottom: 8px; }
+.edu-card p{ color: var(--text-dim); }
 .edu-card .period{ font-size:.85rem; color: var(--gold-soft); font-weight:700; }
 
 /* =========================================================
    CONTACT
    ========================================================= */
+address.contact-info{ font-style:normal; }
 .contact-grid{
   display:grid; grid-template-columns: .9fr 1.1fr; gap: 60px;
 }
-.contact-info p{ color: var(--text-dim); margin-bottom: 34px; }
 .contact-item{
   display:flex; gap: 16px; align-items:flex-start; margin-bottom: 26px;
 }
+.contact-item:last-child{ margin-bottom:0; }
 .contact-item .ci-icon{
   width: 42px; height:42px; border-radius: 10px; flex-shrink:0;
   background: var(--surface-2); border:1px solid var(--border);
@@ -768,43 +834,19 @@ section.tight{ padding: 96px 0; }
 }
 .contact-item .ci-icon svg{ width:19px; height:19px; }
 .contact-item strong{ display:block; font-size:.82rem; color: var(--text-faint); font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px; }
-.contact-item a, .contact-item span.val{ font-size:1rem; color: var(--text); }
+.contact-item a, .contact-item .val{ font-size:1rem; color: var(--text); font-style: normal; }
+.contact-item a:hover{ color: var(--teal-soft); }
 
-.contact-form{
+.contact-panel{
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-l);
   padding: 38px;
+  display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:18px;
 }
-.form-row{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.field{ margin-bottom: 20px; position:relative; }
-.field label{ display:block; font-size:.83rem; color: var(--text-faint); margin-bottom: 8px; font-weight:600; }
-.field input, .field textarea{
-  width:100%;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-s);
-  padding: 13px 15px;
-  color: var(--text);
-  font-family: inherit;
-  font-size: .95rem;
-  transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
-}
-.field textarea{ resize: vertical; min-height: 120px; }
-.field input:focus, .field textarea:focus{
-  outline:none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(43,185,174,.15);
-}
-.field .err-msg{
-  font-size:.78rem; color: var(--danger); margin-top:6px; min-height: 14px; display:block;
-}
-.field.has-error input, .field.has-error textarea{ border-color: var(--danger); }
-.form-note{
-  margin-top: 6px; padding: 13px 16px; border-radius: var(--radius-s);
-  font-size:.88rem; display:none; align-items:center; gap:10px;
-}
-.form-note.show{ display:flex; }
-.form-note.success{ background: rgba(75,191,140,.12); color: var(--success); border:1px solid rgba(75,191,140,.3); }
-.form-note.error{ background: rgba(226,104,95,.12); color: var(--danger); border:1px solid rgba(226,104,95,.3); }
+.contact-panel h3{ font-size: clamp(1.35rem, 2vw, 1.8rem); }
+.contact-panel p{ color: var(--text-dim); max-width: 52ch; }
+.contact-panel .contact-alternative{ font-size:.9rem; color: var(--text-faint); }
 
 /* =========================================================
    BACK TO TOP
@@ -836,7 +878,7 @@ footer{
 .footer-brand .brand{ margin-bottom: 10px; }
 .footer-brand p{ color: var(--text-faint); font-size:.9rem; max-width: 320px; }
 .footer-links{ display:flex; gap: 60px; flex-wrap:wrap; }
-.footer-links h4{ font-size:.82rem; color: var(--text-faint); text-transform:uppercase; letter-spacing:.05em; margin-bottom: 16px; }
+.footer-links h2{ font-family: var(--font-body); font-size:.82rem; font-weight:600; color: var(--text-faint); text-transform:uppercase; letter-spacing:.05em; margin-bottom: 16px; }
 .footer-links ul{ display:flex; flex-direction:column; gap: 10px; }
 .footer-links a{ font-size:.92rem; color: var(--text-dim); transition: color .3s var(--ease); }
 .footer-links a:hover{ color: var(--teal-soft); }
@@ -850,16 +892,19 @@ footer{
    ========================================================= */
 @media (max-width: 920px){
   .nav-links{
-    position: fixed; inset: 0 0 0 30%; top:0;
+    position: fixed; inset: 0 0 0 30%;
+    height: 100vh; height: 100dvh;
     background: rgba(9,12,17,.98);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     flex-direction: column; justify-content:center; align-items:flex-start;
     gap: 26px; padding: 40px;
     transform: translateX(100%);
-    transition: transform .45s var(--ease);
+    visibility: hidden;
+    transition: transform .45s var(--ease), visibility 0s linear .45s;
     border-left: 1px solid var(--border);
   }
-  .nav-links.open{ transform: translateX(0); }
+  .nav-links.open{ transform: translateX(0); visibility: visible; transition: transform .45s var(--ease), visibility 0s; }
   .nav-links a{ font-size: 1.2rem; }
   .nav-cta .btn-sm{ display:none; }
   .nav-toggle{ display:flex; }
@@ -892,83 +937,74 @@ footer{
   .tools-grid{ grid-template-columns: repeat(2,1fr); }
   .about-stats{ grid-template-columns: 1fr 1fr; }
   .resp-grid, .business-list{ grid-template-columns: 1fr; }
-  .form-row{ grid-template-columns: 1fr; }
   .hero-stats{ gap: 26px; }
   .footer-top{ flex-direction:column; gap: 30px; }
   .footer-links{ gap: 34px; }
   .edu-card{ flex-direction:column; }
   .badge{ display:none; }
   .business-card{ padding: 30px 24px; }
+  .contact-panel{ padding: 30px 24px; }
 }
 
 @media (max-width: 420px){
   .hero h1{ max-width: none; }
   .hero-actions{ flex-direction:column; align-items:flex-start; }
 }
-
-/* Direct contact panel */
-.contact-direct{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:18px}
-.contact-direct h3{font-size:clamp(1.35rem,2vw,1.8rem)}
-.contact-direct p{color:var(--text-dim);max-width:52ch}
-.contact-direct .contact-alternative{font-size:.9rem;color:var(--text-faint)}
-.project-body .text-link{align-self:flex-start;margin-top:2px}
-
-
 </style>
 </head>
 <body>
 
-
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ============ NAVBAR ============ -->
 <header class="navbar" id="navbar">
   <div class="container">
-    <a href="#home" class="brand">Bilal<span>Ihsan</span></a>
+    <a href="#home" class="brand" aria-label="Bilal Ihsan, back to top">Bilal<span>Ihsan</span></a>
 
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#market" class="nav-link">Market Analysis</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#market">Market Analysis</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <div class="nav-cta">
       <a href="#contact" class="btn btn-primary btn-sm">Let's Work Together</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="home">
+<section class="hero" id="home" aria-labelledby="hero-title">
   <div class="container">
     <div class="hero-copy">
       <span class="hero-eyebrow">WordPress • E-commerce • Creative Content</span>
-      <h1>Websites and <em>content</em> built for business</h1>
-      <p class="hero-lede">I’m Bilal Ihsan, a WordPress designer and digital creative based in Islamabad. I build and improve e-commerce websites, create product visuals, and develop short-form content for brands.</p>
+      <h1 id="hero-title">Websites and <em>content</em> built for business</h1>
+      <p class="hero-lede">I’m Bilal Ihsan, a WordPress designer and digital creative based in Islamabad. I build and improve e-commerce websites, create product visuals and develop short-form content for brands.</p>
 
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View My Work
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
         <a href="mailto:bilalihsan4@gmail.com?subject=Portfolio%20enquiry" class="btn btn-ghost">Email Me
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
         </a>
         <a href="#contact" class="text-link">Let's Connect
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
       </div>
 
       <div class="hero-stats">
-        <div><strong>2014</strong><span>Business background since</span></div>
+        <div><strong>Since 2014</strong><span>Running a business</span></div>
         <div><strong>WordPress</strong><span>Websites &amp; stores</span></div>
         <div><strong>AI-assisted</strong><span>Visual content workflows</span></div>
       </div>
@@ -976,27 +1012,28 @@ footer{
 
     <div class="hero-visual">
       <div class="portrait-frame">
-        <img src="profile.jpg" alt="Bilal Ihsan">
+        <img src="profile.jpg" alt="Portrait of Bilal Ihsan" width="360" height="360" fetchpriority="high" decoding="async">
       </div>
       <div class="badge badge-1"><span class="dot"></span>Digital Marketing</div>
       <div class="badge badge-2"><span class="dot"></span>AI Content</div>
       <div class="badge badge-3"><span class="dot"></span>E-commerce</div>
+      <div class="badge badge-4"><span class="dot"></span>Trading</div>
     </div>
   </div>
 </section>
 
 <!-- ============ ABOUT ============ -->
-<section id="about">
+<section id="about" aria-labelledby="about-title">
   <div class="container">
     <div class="about-grid">
       <div class="about-copy reveal">
-        <div class="section-head" style="margin-bottom:28px;">
+        <div class="section-head compact">
           <span class="kicker">About Me</span>
-          <h2>Business experience meets hands-on creative work</h2>
+          <h2 id="about-title">Business experience meets hands-on creative work</h2>
         </div>
-        <p>Before working on websites and digital content, I ran a gas distribution business. That experience taught me to think about the customer, the product and the practical details behind a sale.</p>
-        <p>Today I work with WordPress and WooCommerce, product presentation, graphics and AI-assisted visual workflows. My portfolio includes live stores and creative concepts; each project below identifies the type of work involved.</p>
-        <p>I also study forex and gold markets. That is a separate part of my background, rather than a service offered through this portfolio.</p>
+        <p>Before working on websites and digital content, I ran a gas distribution business. That taught me to think about the customer, the product and the practical details behind a sale.</p>
+        <p>Today I work with WordPress and WooCommerce, product presentation, graphics and AI-assisted visual workflows. My portfolio includes live stores and creative concepts, and each project below says which type of work it is.</p>
+        <p>I also study forex and gold markets. That is a separate part of my background, not a service offered through this portfolio.</p>
       </div>
 
       <div class="about-stats reveal-stagger reveal">
@@ -1010,129 +1047,123 @@ footer{
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section id="services">
+<section id="services" aria-labelledby="services-title">
   <div class="container">
-    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+    <div class="section-head center reveal">
       <span class="kicker">Services</span>
-      <h2>Where I add value</h2>
+      <h2 id="services-title">Where I add value</h2>
       <p>Practical help with websites, product presentation and creative content.</p>
     </div>
 
     <div class="services-grid reveal-stagger reveal">
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-7-7 18-2-8-8-2z"/></svg></div>
-        <h3>Campaign Creative</h3>
-        <p>Graphics and visual concepts for promotions, product launches and social channels.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 015 5c0 2-1 3-2 4H9c-1-1-2-2-2-4a5 5 0 015-5z"/><path d="M9 17h6M10 21h4"/></svg></div>
-        <h3>AI Content Creation</h3>
-        <p>AI-assisted image, video and visual content creation for brands, products and digital campaigns.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 16h5"/></svg></div>
-        <h3>Social Media Content</h3>
-        <p>Creative social media content, short-form video concepts and promotional assets.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></div>
-        <h3>E-commerce Content</h3>
-        <p>Product imagery, website content, product presentation and e-commerce creative development.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div>
         <h3>WordPress &amp; WooCommerce</h3>
         <p>Page layouts, store content, product variations, images and storefront presentation.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l4-10 4 6 3-4 5 8H4z"/></svg></div>
-        <h3>Graphic Design</h3>
-        <p>Brand visuals, promotional graphics, product creatives and digital marketing assets.</p>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></div>
+        <h3>E-commerce Content</h3>
+        <p>Product imagery, website content and product presentation for online stores.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 6h6v6"/></svg></div>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 6h6v6"/></svg></div>
         <h3>Product Content</h3>
         <p>Clear product copy and visuals that help visitors understand what is being sold.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M12 3a5 5 0 015 5c0 2-1 3-2 4H9c-1-1-2-2-2-4a5 5 0 015-5z"/><path d="M9 17h6M10 21h4"/></svg></div>
+        <h3>AI Content Creation</h3>
+        <p>AI-assisted images, video and visuals for brands, products and campaigns.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 16h5"/></svg></div>
+        <h3>Social Media Content</h3>
+        <p>Social posts, short-form video concepts and promotional assets.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 20l4-10 4 6 3-4 5 8H4z"/></svg></div>
+        <h3>Graphic Design &amp; Campaign Creative</h3>
+        <p>Brand visuals and promotional graphics for launches, offers and social channels.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ SKILLS ============ -->
-<section id="skills">
+<section id="skills" aria-labelledby="skills-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Skills</span>
-      <h2>Skills I use in projects</h2>
+      <h2 id="skills-title">Skills I use in projects</h2>
     </div>
 
     <div class="skills-grid reveal-stagger reveal">
       <div class="skill-panel">
         <h3>Digital Skills</h3>
-        <div class="tag-list">
-          <span class="tag">Digital Marketing</span>
-          <span class="tag">AI Content Creation</span>
-          <span class="tag">AI Image Generation</span>
-          <span class="tag">AI Video Generation</span>
-          <span class="tag">Social Media Content</span>
-          <span class="tag">E-commerce Content</span>
-          <span class="tag">Website Content</span>
-          <span class="tag">Graphic Design</span>
-          <span class="tag">Digital Growth</span>
-        </div>
+        <ul class="tag-list">
+          <li class="tag">Digital Marketing</li>
+          <li class="tag">AI Content Creation</li>
+          <li class="tag">AI Image Generation</li>
+          <li class="tag">AI Video Generation</li>
+          <li class="tag">Social Media Content</li>
+          <li class="tag">E-commerce Content</li>
+          <li class="tag">Website Content</li>
+          <li class="tag">Graphic Design</li>
+        </ul>
       </div>
       <div class="skill-panel">
         <h3>Platforms &amp; Tools</h3>
-        <div class="tag-list">
-          <span class="tag">WordPress</span>
-          <span class="tag">WooCommerce</span>
-          <span class="tag">AI writing and visual tools</span>
-          <span class="tag">AI Image &amp; Video Workflows</span>
-          <span class="tag">Social Media Creative Workflows</span>
-          <span class="tag">E-commerce Content Management</span>
-        </div>
+        <ul class="tag-list">
+          <li class="tag">WordPress</li>
+          <li class="tag">WooCommerce</li>
+          <li class="tag">AI Writing &amp; Visual Tools</li>
+          <li class="tag">AI Image &amp; Video Workflows</li>
+          <li class="tag">Social Media Workflows</li>
+          <li class="tag">E-commerce Content Management</li>
+        </ul>
       </div>
       <div class="skill-panel">
         <h3>Commercial Skills</h3>
-        <div class="tag-list">
-          <span class="tag">Sales &amp; Marketing</span>
-          <span class="tag">Business Management</span>
-          <span class="tag">Customer Relationships</span>
-          <span class="tag">Financial Management</span>
-          <span class="tag">Commercial Planning</span>
-          <span class="tag">Supply &amp; Demand Management</span>
-        </div>
+        <ul class="tag-list">
+          <li class="tag">Sales &amp; Marketing</li>
+          <li class="tag">Business Management</li>
+          <li class="tag">Customer Relationships</li>
+          <li class="tag">Financial Management</li>
+          <li class="tag">Commercial Planning</li>
+          <li class="tag">Supply &amp; Demand Management</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ PROJECTS ============ -->
-<section id="projects">
+<section id="projects" aria-labelledby="projects-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Featured Projects</span>
-      <h2>Selected work</h2>
+      <h2 id="projects-title">Selected work</h2>
       <p>Live website work and creative concepts. Open the live projects to see the work in context.</p>
     </div>
 
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" aria-pressed="true" data-filter="all">All</button>
-      <button class="filter-btn" aria-pressed="false" data-filter="ecommerce">E-commerce</button>
-      <button class="filter-btn" aria-pressed="false" data-filter="digital-marketing">Digital Marketing</button>
-      <button class="filter-btn" aria-pressed="false" data-filter="branding">Branding</button>
-      <button class="filter-btn" aria-pressed="false" data-filter="ai-content">AI Content</button>
+    <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+      <button type="button" class="filter-btn active" aria-pressed="true" data-filter="all">All</button>
+      <button type="button" class="filter-btn" aria-pressed="false" data-filter="ecommerce">E-commerce</button>
+      <button type="button" class="filter-btn" aria-pressed="false" data-filter="digital-marketing">Digital Marketing</button>
+      <button type="button" class="filter-btn" aria-pressed="false" data-filter="branding">Branding</button>
+      <button type="button" class="filter-btn" aria-pressed="false" data-filter="ai-content">AI Content</button>
     </div>
 
-    <div class="projects-grid reveal-stagger reveal" id="projectsGrid">
+    <div class="projects-grid reveal-stagger reveal" id="projectsGrid" aria-live="polite">
 
       <article class="project-card" data-category="ecommerce">
-        <div class="project-media media-woodelle"><span class="pm-label">WOODELLE</span></div>
+        <div class="project-media media-woodelle" aria-hidden="true"><span class="pm-label">WOODELLE</span></div>
         <div class="project-body">
           <span class="project-cat">E-commerce Creative &amp; Website Project</span>
           <h3>Woodelle</h3>
           <p>WordPress and WooCommerce storefront work, including product presentation, colour variations and hero content.</p>
-          <a class="text-link" href="https://woodelle.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Woodelle website">Visit live website →</a>
+          <a class="text-link" href="https://woodelle.co.uk/" target="_blank" rel="noopener noreferrer">Visit live website<span aria-hidden="true"> →</span><span class="sr-only"> (Woodelle, opens in a new tab)</span></a>
           <div class="project-tags">
             <span>Product Imagery</span><span>Website Hero Banners</span><span>WooCommerce Presentation</span>
           </div>
@@ -1140,11 +1171,11 @@ footer{
       </article>
 
       <article class="project-card" data-category="digital-marketing ai-content">
-        <div class="project-media media-falah"><span class="pm-label">FALAH Technologies</span></div>
+        <div class="project-media media-falah" aria-hidden="true"><span class="pm-label">FALAH Technologies</span></div>
         <div class="project-body">
           <span class="project-cat">Digital Services Content</span>
           <h3>Falah Technologies</h3>
-          <p>Commercial video and visual concepts for a digital services brand. Ask me for samples of the finished work.</p>
+          <p>Commercial video and visual concepts for a digital services brand. Samples of the finished work are available on request.</p>
           <div class="project-tags">
             <span>Commercial Video</span><span>B2B Content</span><span>UI/UX Promotion</span>
           </div>
@@ -1152,11 +1183,11 @@ footer{
       </article>
 
       <article class="project-card" data-category="branding ai-content">
-        <div class="project-media media-velora"><span class="pm-label">VELORA</span></div>
+        <div class="project-media media-velora" aria-hidden="true"><span class="pm-label">VELORA</span></div>
         <div class="project-body">
           <span class="project-cat">Luxury Fragrance Brand Concept</span>
           <h3>Velora</h3>
-          <p>Concept project exploring fragrance imagery, visual direction and cinematic advertising ideas. This is a concept, not a client launch.</p>
+          <p>A concept project exploring fragrance imagery, visual direction and cinematic advertising ideas. It is a concept, not a client launch.</p>
           <div class="project-tags">
             <span>Brand Visuals</span><span>Product Hero Imagery</span><span>Cinematic Content</span>
           </div>
@@ -1168,35 +1199,32 @@ footer{
 </section>
 
 <!-- ============ EXPERIENCE ============ -->
-<section id="experience">
+<section id="experience" aria-labelledby="experience-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Professional Experience</span>
-      <h2>Recent role</h2>
+      <h2 id="experience-title">Recent work</h2>
     </div>
 
     <div class="timeline reveal">
       <div class="timeline-item">
-        <span class="timeline-dot"></span>
+        <span class="timeline-dot" aria-hidden="true"></span>
         <div class="timeline-card">
           <div class="timeline-meta">
             <span class="period">Project-based</span>
-            <span class="org">Independent / Project-Based</span>
+            <span class="org">Independent</span>
           </div>
           <h3>Website and Creative Projects</h3>
-          <p>Build and refine WordPress pages and WooCommerce storefronts, and create supporting visuals and short-form concepts.</p>
+          <p>I build and refine WordPress pages and WooCommerce storefronts, and create the visuals and short-form concepts that support them.</p>
           <ul class="resp-grid">
-            <li>Develop digital marketing content</li>
-            <li>Create social media content</li>
-            <li>Create AI-assisted visual content</li>
-            <li>Create brand visuals</li>
-            <li>Create product creatives</li>
-            <li>Develop website content</li>
-            <li>Create promotional assets</li>
-            <li>Develop short-form commercial video concepts</li>
-            <li>Support WordPress projects</li>
-            <li>Support WooCommerce projects</li>
-            <li>Develop e-commerce creative content</li>
+            <li>WordPress page builds and updates</li>
+            <li>WooCommerce store setup and content</li>
+            <li>Product creatives and imagery</li>
+            <li>Brand and promotional visuals</li>
+            <li>AI-assisted visual content</li>
+            <li>Social media content</li>
+            <li>Website copy and content</li>
+            <li>Short-form commercial video concepts</li>
           </ul>
         </div>
       </div>
@@ -1205,11 +1233,11 @@ footer{
 </section>
 
 <!-- ============ MARKET ANALYSIS ============ -->
-<section id="market" class="market-section">
+<section id="market" class="market-section" aria-labelledby="market-title">
   <div class="container">
     <div class="market-grid">
       <div class="market-chart reveal">
-        <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
           <polyline points="0,160 30,150 60,168 90,120 120,140 150,90 180,110 210,70 240,95 270,60 300,80 330,40 360,58 400,20"
             fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           <polyline points="0,180 30,175 60,182 90,165 120,170 150,150 180,158 210,140 240,150 270,132 300,140 330,120 360,128 400,110"
@@ -1222,11 +1250,11 @@ footer{
 
       <div class="market-copy reveal">
         <div class="timeline-meta">
-          <span class="period">Independent study and trading</span>
-          <span class="org">Independent Trader / Market Analyst</span>
+          <span class="period">Personal study &amp; trading</span>
+          <span class="org">Independent Trader</span>
         </div>
-        <h2>Forex &amp; Gold Market Analysis</h2>
-        <p>I analyze forex and gold using technical analysis, price action and risk management. This section describes a personal area of experience.</p>
+        <h2 id="market-title">Forex &amp; Gold Market Analysis</h2>
+        <p>I analyse forex and gold using technical analysis, price action and risk management. This is a personal area of experience, not a client service.</p>
 
         <div class="pill-grid">
           <span>Forex Markets</span><span>Gold Markets</span><span>Technical Analysis</span>
@@ -1236,22 +1264,22 @@ footer{
         </div>
 
         <div class="platform-row">
-          <div class="platform-chip"><span class="dot-icon"></span>MetaTrader 5</div>
-          <div class="platform-chip"><span class="dot-icon"></span>TradingView</div>
+          <div class="platform-chip"><span class="dot-icon" aria-hidden="true"></span>MetaTrader 5</div>
+          <div class="platform-chip"><span class="dot-icon" aria-hidden="true"></span>TradingView</div>
         </div>
 
-        <p class="disclaimer">Shared for professional context only — this reflects market analysis and trading experience, not investment advice, and involves no guaranteed profit or performance claims.</p>
+        <p class="disclaimer">Shared for background only. Nothing here is investment advice, and no profits or results are claimed.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ BUSINESS EXPERIENCE ============ -->
-<section id="business">
+<section id="business" aria-labelledby="business-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Business Experience</span>
-      <h2>Business &amp; Commercial Experience</h2>
+      <h2 id="business-title">Business &amp; Commercial Experience</h2>
     </div>
 
     <div class="business-card reveal">
@@ -1260,21 +1288,21 @@ footer{
           <span class="period">Since 2014</span>
         </div>
         <h3>Business Owner / Commercial Operations</h3>
-        <span class="loc">KPK, Pakistan</span>
-        <p>Managed gas supply and distribution operations, including customer relationships, purchasing, stock, supplier coordination and cash-flow decisions.</p>
+        <span class="loc">Khyber Pakhtunkhwa, Pakistan</span>
+        <p>Running gas supply and distribution operations, including customer relationships, purchasing, stock, supplier coordination and cash-flow decisions.</p>
       </div>
       <ul class="business-list">
         <li>Customer Relationship Management</li>
-        <li>Sales Activity</li>
+        <li>Sales</li>
         <li>Supplier Coordination</li>
         <li>Commercial Negotiations</li>
         <li>Purchasing</li>
         <li>Inventory Management</li>
-        <li>Demand Management</li>
-        <li>Cash-flow Requirements</li>
+        <li>Demand Planning</li>
+        <li>Cash-flow Management</li>
         <li>Financial Decisions</li>
         <li>Operational Decisions</li>
-        <li>Supply &amp; Demand Planning</li>
+        <li>Supply Planning</li>
         <li>Business Continuity</li>
       </ul>
     </div>
@@ -1282,77 +1310,77 @@ footer{
 </section>
 
 <!-- ============ TOOLS & PLATFORMS ============ -->
-<section id="tools">
+<section id="tools" aria-labelledby="tools-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Tools &amp; Platforms</span>
-      <h2>What I work with</h2>
+      <h2 id="tools-title">What I work with</h2>
     </div>
 
     <div class="tools-grid reveal-stagger reveal">
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div><span>WordPress</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div><span>WooCommerce</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18l5-9 4 6 3-5 4 8"/></svg></div><span>MetaTrader 5</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 16l5-5 3 3 6-6 4 4"/></svg></div><span>TradingView</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 015 5c0 2-1 3-2 4H9c-1-1-2-2-2-4a5 5 0 015-5z"/><path d="M9 17h6M10 21h4"/></svg></div><span>GPT Engines</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg></div><span>AI Image Generation</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg></div><span>AI Video Generation</span></div>
-      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 16h5"/></svg></div><span>Social Media Workflows</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div><span>WordPress</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div><span>WooCommerce</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M12 3a5 5 0 015 5c0 2-1 3-2 4H9c-1-1-2-2-2-4a5 5 0 015-5z"/><path d="M9 17h6M10 21h4"/></svg></div><span>AI Writing Tools</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg></div><span>AI Image Generation</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg></div><span>AI Video Generation</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 16h5"/></svg></div><span>Social Media Workflows</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 18l5-9 4 6 3-5 4 8"/></svg></div><span>MetaTrader 5</span></div>
+      <div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 16l5-5 3 3 6-6 4 4"/></svg></div><span>TradingView</span></div>
     </div>
   </div>
 </section>
 
 <!-- ============ EDUCATION ============ -->
-<section id="education">
+<section id="education" aria-labelledby="education-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Education</span>
-      <h2>Academic background</h2>
+      <h2 id="education-title">Academic background</h2>
     </div>
 
     <div class="edu-card reveal">
-      <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div>
+      <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div>
       <div>
         <span class="period">Two years of study</span>
-        <h3>BBA studies — NUML</h3>
-        <p>Coursework completed; degree not awarded.</p>
+        <h3>BBA studies, NUML</h3>
+        <p>Two years of coursework completed; degree not awarded.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section id="contact">
+<section id="contact" aria-labelledby="contact-title">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Contact</span>
-      <h2>Let's Work Together</h2>
-      <p>Have a project, business idea or digital content requirement? Get in touch to discuss digital marketing, AI content, e-commerce and commercial creative solutions.</p>
+      <h2 id="contact-title">Let's Work Together</h2>
+      <p>Need a WordPress site, a better-looking store or fresh content for your brand? Get in touch and tell me what you have in mind.</p>
     </div>
 
     <div class="contact-grid">
-      <div class="contact-info reveal">
+      <address class="contact-info reveal">
         <div class="contact-item">
-          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
           <div><strong>Email</strong><a href="mailto:bilalihsan4@gmail.com">bilalihsan4@gmail.com</a></div>
         </div>
         <div class="contact-item">
-          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z"/></svg></div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z"/></svg></div>
           <div><strong>Phone</strong><a href="tel:+923149760070">+92 314 9760070</a></div>
         </div>
         <div class="contact-item">
-          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div><strong>Location</strong><span class="val">Islamabad, Pakistan</span></div>
         </div>
-      </div>
+      </address>
 
-      <div class="contact-form reveal contact-direct">
+      <div class="contact-panel reveal">
         <h3>Tell me about your project</h3>
-        <p>Email me with your website or brand, what you need, and your timeline. I’ll reply directly so we can discuss the details.</p>
+        <p>Email me with your website or brand, what you need and your timeline. I’ll reply directly so we can go through the details.</p>
         <a class="btn btn-primary" href="mailto:bilalihsan4@gmail.com?subject=Portfolio%20project%20enquiry">Start an email conversation
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
         </a>
-        <p class="contact-alternative">Prefer a call? Use the phone number alongside this panel.</p>
+        <p class="contact-alternative">Prefer a call? Ring me on <a href="tel:+923149760070">+92 314 9760070</a>.</p>
       </div>
     </div>
   </div>
@@ -1366,11 +1394,11 @@ footer{
     <div class="footer-top">
       <div class="footer-brand">
         <div class="brand">Bilal<span>Ihsan</span></div>
-        <p>Digital Marketing • AI Content • E-commerce • Business Growth</p>
+        <p>WordPress • E-commerce • Creative Content</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <div>
-          <h4>Navigate</h4>
+          <h2>Navigate</h2>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -1379,7 +1407,7 @@ footer{
           </ul>
         </div>
         <div>
-          <h4>More</h4>
+          <h2>More</h2>
           <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -1387,37 +1415,28 @@ footer{
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Bilal Ihsan. All Rights Reserved.</span>
+      <span>© <span id="year">2026</span> Bilal Ihsan. All rights reserved.</span>
       <span>Built with HTML, CSS &amp; JavaScript</span>
     </div>
   </div>
 </footer>
 
-<button class="back-to-top" id="backToTop" aria-label="Back to top">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+<button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
 <script>
 /* =========================================================
    BILAL IHSAN — PORTFOLIO SCRIPT
-   Vanilla JS only. No dependencies.
+   Vanilla JS, no dependencies.
    ========================================================= */
 (function () {
   'use strict';
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ---------- Preloader ---------- */
-  window.addEventListener('load', function () {
-    var pre = document.getElementById('preloader');
-    if (!pre) return;
-    setTimeout(function () {
-      pre.classList.add('hidden');
-    }, reducedMotion ? 0 : 350);
-  });
 
   /* ---------- Current year ---------- */
   var yearEl = document.getElementById('year');
@@ -1426,60 +1445,61 @@ footer{
   /* ---------- Navbar scroll state ---------- */
   var navbar = document.getElementById('navbar');
   function handleNavScroll() {
-    if (window.scrollY > 30) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 30);
   }
-  handleNavScroll();
-  window.addEventListener('scroll', handleNavScroll, { passive: true });
 
   /* ---------- Mobile menu ---------- */
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
+  var mobileQuery = window.matchMedia('(max-width: 920px)');
 
   function closeMenu() {
     navToggle.classList.remove('open');
     navLinks.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
     document.body.style.overflow = '';
   }
   function openMenu() {
     navToggle.classList.add('open');
     navLinks.classList.add('open');
     navToggle.setAttribute('aria-expanded', 'true');
+    navToggle.setAttribute('aria-label', 'Close menu');
     document.body.style.overflow = 'hidden';
   }
 
-  if (navToggle) {
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && navLinks.classList.contains('open')) { closeMenu(); navToggle.focus(); } });
-    navToggle.addEventListener('click', function () {
-      var isOpen = navLinks.classList.contains('open');
-      if (isOpen) closeMenu(); else openMenu();
-    });
-  }
-
-  var navAnchors = document.querySelectorAll('.nav-links a');
-  navAnchors.forEach(function (a) {
-    a.addEventListener('click', function () {
-      if (navLinks.classList.contains('open')) closeMenu();
-    });
+  navToggle.addEventListener('click', function () {
+    if (navLinks.classList.contains('open')) closeMenu(); else openMenu();
   });
 
-  /* ---------- Smooth scroll for in-page links (with navbar offset) ---------- */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+      closeMenu();
+      navToggle.focus();
+    }
+  });
+
+  // If the window is widened past the mobile breakpoint while the menu is open,
+  // close it so the page doesn't stay scroll-locked.
+  function onBreakpointChange(e) { if (!e.matches) closeMenu(); }
+  if (mobileQuery.addEventListener) mobileQuery.addEventListener('change', onBreakpointChange);
+  else if (mobileQuery.addListener) mobileQuery.addListener(onBreakpointChange);
+
+  var navAnchors = document.querySelectorAll('.nav-links a');
+
+  /* ---------- In-page links: close menu, scroll, move focus ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
       var id = link.getAttribute('href');
       if (id.length < 2) return;
-      var target = document.querySelector(id);
+      var target = document.getElementById(id.slice(1));
       if (!target) return;
       e.preventDefault();
-      var offset = 76;
-      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({ top: top, behavior: reducedMotion ? 'auto' : 'smooth' });
-      history.pushState(null, '', id);
-      target.setAttribute('tabindex', '-1');
+      if (navLinks.classList.contains('open')) closeMenu();
+      // scroll-padding-top in the CSS handles the fixed-header offset
+      target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+      if (history.pushState) history.pushState(null, '', id);
+      if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
       target.focus({ preventScroll: true });
     });
   });
@@ -1487,9 +1507,7 @@ footer{
   /* ---------- Active nav link on scroll ---------- */
   var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
   var navMap = {};
-  navAnchors.forEach(function (a) {
-    navMap[a.getAttribute('href')] = a;
-  });
+  navAnchors.forEach(function (a) { navMap[a.getAttribute('href')] = a; });
 
   function updateActiveLink() {
     var scrollPos = window.scrollY + 120;
@@ -1497,14 +1515,44 @@ footer{
     for (var i = 0; i < sections.length; i++) {
       if (sections[i].offsetTop <= scrollPos) current = sections[i];
     }
-    navAnchors.forEach(function (a) { a.classList.remove('active'); });
-    var link = navMap['#' + current.id];
-    if (link) link.classList.add('active');
+    navAnchors.forEach(function (a) {
+      a.classList.remove('active');
+      a.removeAttribute('aria-current');
+    });
+    var link = current && navMap['#' + current.id];
+    if (link) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'location');
+    }
   }
-  updateActiveLink();
-  window.addEventListener('scroll', updateActiveLink, { passive: true });
 
-  /* ---------- Scroll reveal (Intersection Observer) ---------- */
+  /* ---------- Back to top ---------- */
+  var backToTop = document.getElementById('backToTop');
+  function handleBackToTop() {
+    backToTop.classList.toggle('show', window.scrollY > 480);
+  }
+  backToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+  });
+
+  /* ---------- One throttled scroll handler instead of three ---------- */
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      handleNavScroll();
+      updateActiveLink();
+      handleBackToTop();
+      ticking = false;
+    });
+  }
+  handleNavScroll();
+  updateActiveLink();
+  handleBackToTop();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !reducedMotion) {
     var io = new IntersectionObserver(function (entries) {
@@ -1520,31 +1568,22 @@ footer{
     revealEls.forEach(function (el) { el.classList.add('in-view'); });
   }
 
-  /* ---------- Back to top ---------- */
-  var backToTop = document.getElementById('backToTop');
-  function handleBackToTop() {
-    if (window.scrollY > 480) backToTop.classList.add('show');
-    else backToTop.classList.remove('show');
-  }
-  handleBackToTop();
-  window.addEventListener('scroll', handleBackToTop, { passive: true });
-  backToTop.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
-  });
-
   /* ---------- Project filtering ---------- */
   var filterBtns = document.querySelectorAll('.filter-btn');
   var projectCards = document.querySelectorAll('.project-card');
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      filterBtns.forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+      filterBtns.forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
       btn.setAttribute('aria-pressed', 'true');
       var filter = btn.getAttribute('data-filter');
 
       projectCards.forEach(function (card) {
-        var cats = (card.getAttribute('data-category') || '').split(' ');
+        var cats = (card.getAttribute('data-category') || '').split(/\s+/);
         var show = filter === 'all' || cats.indexOf(filter) !== -1;
         card.classList.toggle('is-hidden', !show);
       });
@@ -1552,8 +1591,6 @@ footer{
   });
 
 })();
-
-
 </script>
 </body>
 </html>
